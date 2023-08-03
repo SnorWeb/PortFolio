@@ -1,0 +1,385 @@
+:root{
+    --background-color: #FDFCEB ;
+    --darkgold :#CCBF63;
+    --darkBlue: #567289;
+    --gold: #E4D56D;
+    --blue: #7A8FA0;
+    --lightGold: #FFEE78;
+    --lightblue: #AEDCE3;
+    --box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+h3{
+ margin: 0;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ font-family: 'Poppins', sans-serif;
+ font-size: 1.5rem;
+ font-weight: bold;
+}
+
+p{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    cursor:pointer;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+i{
+    margin: 0;
+    font-size: 3rem;
+    padding: 0;
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+}
+
+.header{
+    background: var(--background-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 800px;
+}
+
+.headerText{
+    background-image: url(./resources/headerAchtergrond.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+}
+
+.headerText > p {
+    
+    font-size: 2rem;
+    margin: 0;
+}
+
+.headerImage{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 100px;
+}
+
+.about{
+    background: var(--background-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.icons div{
+    height: 200px;
+    width: 200px;
+    border: solid 5px var(--darkgold);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons img{
+    height: 100px;
+    margin-bottom: 10px;
+    
+}
+
+.aboutText{
+    grid-column: 2;
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+    margin-left: 25%;
+}
+
+
+.projects{
+    width: 100%;
+    margin-top: 0;
+    background-color: var(--blue);
+}
+
+.examples{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    
+}
+.examples div{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.examples img{
+    height: 600px;
+}
+
+.projects H2{
+    text-align: center;
+    background-color: var(--darkgold);
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.projects h3{
+    padding-bottom: 50px;
+}
+.contact {
+    height: 600px;
+    background-image: url(./resources/ContactAchtergrond2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.container{
+    box-shadow: var(--box-shadow);
+}
+
+
+.contact div {
+    background-color: var(--darkgold);
+    width: fit-content;
+    height: max-content;
+    float: right;
+    padding-left: 10%;
+    padding-right: 5%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.container .social{
+    display: flex;
+    flex-flow: row;
+    padding: 0;
+}
+
+.social a{
+    padding-top: 10px;
+    display: flex;
+    margin-right: 15px;
+}
+
+
+.footer{
+    background-color: black;
+    height: fit-content;
+}
+
+.footer p{
+    color: gray;
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1439px) {
+    .examples img {
+      height: 400px; 
+    }
+  }
+
+@media  screen and (max-width: 768px) {
+
+    h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .headerImage img{
+        height: 400px;
+    }
+
+    .icons {
+        visibility: hidden;
+        display: None;
+    }
+
+    .about{
+        display: flex;
+        flex-flow: column;
+        height: fit-content;
+    }
+
+
+    .aboutText{
+        
+        margin: auto;
+    }
+
+    .projects H2{
+        margin: 0;
+        padding: 0;
+        background-color: var(--darkgold);
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+        box-shadow: var(--box-shadow);
+        font-weight: bolder;
+        
+    }
+    .examples{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row: auto;
+        gap: 10px;     
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .header{
+        background: var(--background-color);
+        display: flex;
+        flex-flow: column;
+        height:fit-content;
+    }
+
+    .headerText > p {
+    
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .about{
+        display: flex;
+        flex-flow: column;
+        height: fit-content;
+    }
+    
+    .aboutText{
+        text-align: center;
+        margin: auto;
+    }
+
+    .icons{
+        visibility: hidden;
+        display: none;
+    }
+
+    .examples{
+        padding-top: 50px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .projects H2{
+        margin: 0;
+        background-color: var(--darkgold);
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .headerImage img{
+        height: 400px;
+    }
+
+    .contact{
+        background-color: var(--darkgold);
+        height: fit-content;
+    }
+
+    .contact >div{
+        background-color: var(--darkgold);
+        text-align: center;
+        width: 100%;
+        height: max-content;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .contact{
+        padding-bottom: 40px;
+    }
+
+    .social a{
+        padding-top: 10px;
+        display: flex;
+        margin-right: 15px;
+        margin-bottom: 40px;
+    }
+
+    .container .social{
+        visibility: hidden;
+        display: none;
+        flex-flow: row;
+        padding: 0;
+    }
+
+    .footer p {
+        font-size: 0.5rem;
+    }
+  }
